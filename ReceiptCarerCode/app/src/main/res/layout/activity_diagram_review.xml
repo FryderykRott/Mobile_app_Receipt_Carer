@@ -1,0 +1,542 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReceipt">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <!--Podgląd-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/colorAccentWhityWhite">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="5dp"
+                android:text="Podgląd:"
+                app:fontFamily="@font/roboto" />
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ellipse"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Card 1-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Rok:"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:layout_margin="3dp"
+                                    android:text="2019" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Miesiąc:"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Styczeń"
+
+                                    android:layout_margin="3dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:text="1900,52 zł"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginStart="120dp"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!--Row 1-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorRowBlue" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/row_artykuly"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Śmieci" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="140dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="204,24 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                            <!--Row 2-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorRowGreen" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/row_kuchnia"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Kuchnia" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="126dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="1300,99 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                            <!--Row 3-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorRowYelow" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/row_zabawki"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Zabawki" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="140dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="54.00 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                            <!--Row 4-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorAccent" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/ic_date_range_black_24dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Artykuły szkolne" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="85dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="302.99 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+                <!--Card 2-->
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+
+                            android:layout_margin="5dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Rok:"
+                                    android:textStyle="bold"
+                                    android:textSize="12sp"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:layout_margin="3dp"
+                                    android:text="2019" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:layout_margin="5dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Miesiąc:"
+                                    android:textSize="12sp"
+                                    android:textStyle="bold"
+                                    android:typeface="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Luty"
+
+                                    android:layout_margin="3dp"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/roboto"
+                                android:text="2570.29 zł"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:layout_marginStart="120dp"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!--Row 1-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorRowBlue" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/row_artykuly"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Śmieci" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="140dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="204,24 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                            <!--Row 2-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorRowGreen" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/row_kuchnia"/>
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Kuchnia" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="126dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="1300,99 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                            <!--Row 3-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorRowYelow" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/row_zabawki"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Zabawki" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="140dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="54.00 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                            <!--Row 4-->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="5dp"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:background="@color/colorAccent" />
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_margin="3dp"
+                                    android:src="@drawable/ic_date_range_black_24dp"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="Artykuły szkolne" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="85dp"
+                                    android:layout_marginTop="3dp"
+                                    android:layout_marginEnd="3dp"
+                                    android:layout_marginBottom="3dp"
+                                    android:fontFamily="@font/roboto"
+                                    android:text="302.99 zł"
+                                    android:textAlignment="textEnd" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

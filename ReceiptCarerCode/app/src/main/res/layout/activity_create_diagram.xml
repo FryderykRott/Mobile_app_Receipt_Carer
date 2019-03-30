@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReceipt">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="@dimen/text_margin"-->
+        <!--android:text="@string/large_text" />-->
+
+        <!--Od-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Od"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:gravity=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <EditText
+                    android:id="@+id/editTextDiagramOdCalendar"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Od"
+                    android:textColorHint="@color/colorAccentLightGrey" />
+
+
+                <ImageButton
+                    android:id="@+id/buttonDiagramOdCalendar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--Do-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Do"
+                android:layout_marginTop="5dp"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:gravity=""/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <EditText
+                    android:id="@+id/editTextDiagramDoCalendar"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Do"
+                    android:textColorHint="@color/colorAccentLightGrey" />
+
+
+                <ImageButton
+                    android:id="@+id/buttonDiagramDoCalendar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--Przedział czasowy-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Przedział czasowy"
+                android:layout_gravity="start"
+                android:layout_marginEnd="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/PrzedzialCzasowySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/colorAccentLightGrey" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+
+        </LinearLayout>
+
+        <!--Rodzaj wykresu-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rodzaj wykresu"
+                android:layout_gravity="start"
+                android:layout_marginEnd="5dp"/>
+
+            <android.support.v7.widget.AppCompatSpinner
+                android:id="@+id/RodzajWykresySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorAccent"
+                android:inputType="numberDecimal"
+                android:textColorHint="@color/colorAccentLightGrey" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="?android:attr/listDivider" />
+
+        <!--Podgląd-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorAccentWhityWhite"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="5dp"
+                android:text="Podgląd:" />
+
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/ellipse" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

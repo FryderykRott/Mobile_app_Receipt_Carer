@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddReceipt">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_margin="@dimen/text_margin"-->
+            <!--android:text="@string/large_text" />-->
+
+            <!--Data zakupu-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp">
+
+                <EditText
+                    android:id="@+id/dataZakupyEditText"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Data zakupu"
+                    android:textColorHint="@color/colorAccentLightGrey" />
+
+
+                <ImageButton
+                    android:id="@+id/dataZakupuCalendar"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:background="?android:selectableItemBackground"
+                    android:src="@drawable/ic_date_range_black_24dp" />
+
+            </LinearLayout>
+
+            <!--Paragon nazwa-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nazwa paragonu"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/ParagonNazwaEditTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Paragon nazwa"
+                    android:textColorHint="@color/colorAccentLightGrey" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/xParagonTekst"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="5dp"
+                        android:text="x"
+                        android:textColor="@color/colorAccentLightGrey" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/ 50"
+                        android:textColor="@color/colorAccentLightGrey"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!--Cena-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cena"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/CenaEditTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="0.00 zł"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorAccentLightGrey" />
+
+
+            </LinearLayout>
+
+            <!--Kategoria-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kategoria"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"/>
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/KategoriaSpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:inputType="numberDecimal"
+                    android:textColorHint="@color/colorAccentLightGrey" />
+
+
+
+            </LinearLayout>
+
+            <!--Nazwa Sklepu-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nazwa sklepu"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"/>
+
+                <android.support.v7.widget.AppCompatEditText
+                    android:id="@+id/SklepEditTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Sklep"
+                    android:textColorHint="@color/colorAccentLightGrey" />
+
+
+            </LinearLayout>
+
+            <!--Opis-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Opis"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"/>
+
+                <EditText
+                    android:id="@+id/OpisEditTekst"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:ems="10"
+                    android:gravity="start"
+                    android:inputType="textMultiLine" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/xOpis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="5dp"
+                        android:text="x"
+                        android:textColor="@color/colorAccentLightGrey" />
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="/ 500"
+                        android:textColor="@color/colorAccentLightGrey"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="5dp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="?android:attr/listDivider" />
+
+            <!--Znaczniki-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="3dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="start"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"
+                    android:text="Znaczniki" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/ZnacznikEditTekst"
+                        android:layout_width="285dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:ems="10"
+                        android:gravity="start"
+                        android:hint="Wpisz tag"
+                        android:inputType="textMultiLine"
+                        android:textColorHint="@color/colorAccentLightGrey" />
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/ZnacznikDodajButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:src="@drawable/ic_add_black_24dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/xTekstZnacznik"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+
+                        android:text="x"
+                        android:textColor="@color/colorAccentLightGrey"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="10dp"
+                        android:gravity="center"
+                        android:text="/ 10"
+                        android:textColor="@color/colorAccentLightGrey"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TekstSaveZnaczniki"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <!--Produkty-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Produkty"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.AppCompatSpinner
+                        android:id="@+id/produktySpinner"
+                        android:layout_width="285dp"
+                        android:layout_height="40dp"
+                        android:backgroundTint="@color/colorAccent"
+                        android:inputType="numberDecimal"
+                        android:textColorHint="@color/colorAccentLightGrey" />
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/DodajProduktButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="?android:selectableItemBackground"
+                        android:src="@drawable/ic_add_black_24dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/xTekstProdukt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+
+                        android:text="x"
+                        android:textColor="@color/colorAccentLightGrey"
+                        android:textSize="16sp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="end"
+                        android:layout_marginEnd="5dp"
+                        android:gravity="center"
+                        android:text="/ 10"
+                        android:textColor="@color/colorAccentLightGrey"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tekstProdukty"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <!--Gwarancja-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginEnd="5dp"
+                        android:text="Gwarancja na: " />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/gwarancjaTekst"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginEnd="5dp"
+                        android:text="x" />
+                </LinearLayout>
+
+
+                <SeekBar
+                    android:id="@+id/gwarancjaSlider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/colorAccentLightGrey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="10dp">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginEnd="5dp"
+                    android:text="+ Zdjęcia" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_gravity="top"
+                    android:gravity="top">
+
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ListView
+                            android:id="@+id/contenerZdjeciaAddR"
+                            android:layout_width="270dp"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="8dp">
+                        </ListView>
+
+
+                    </ScrollView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        >
+
+                        <android.support.v7.widget.AppCompatImageButton
+                            android:id="@+id/aparatButton"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="?android:selectableItemBackground"
+                            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_camera_red_50dp" />
+
+                        <TextView
+                            android:id="@+id/Text_ad_skanuj_error_support"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="Aparat"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+
+                        <android.support.v7.widget.AppCompatImageButton
+                            android:id="@+id/GaleriaButton"
+                            android:layout_width="70dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="0dp"
+                            android:background="?android:selectableItemBackground"
+                            android:outlineAmbientShadowColor="@color/colorPrimaryDark"
+                            android:src="@drawable/ic_image_red_50dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/roboto"
+                            android:gravity="center"
+                            android:text="Galeria"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="16sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+            <!--Zdjęcia-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

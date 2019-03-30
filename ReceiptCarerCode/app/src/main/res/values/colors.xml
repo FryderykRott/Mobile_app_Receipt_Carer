@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#db4437</color>
+    <color name="colorPrimaryDark">#b93221</color>
+    <color name="colorAccent">#d23944</color>
+    <color name="colorAccentGreen">#d6ecd5</color>
+    <color name="colorAccentWhite">#e9eaf1</color>
+    <color name="colorAccentLightGrey">#d6d6d6</color>
+    <color name="colorAccentStar">#fdff95</color>
+    <color name="colorError">#f7aeaf</color>
+    <color name="colorAccentWhityWhite">#ffffff</color>
+
+    <!--COLORY DLA WYKRESU-->
+    <color name="colorRowBlue">#297AF3</color>
+    <color name="colorRowGreen">#00CD9D</color>
+    <color name="colorRowYelow">#E6F329</color>
+    <color name="colorRowError">#ea9392</color>
+
+</resources>
